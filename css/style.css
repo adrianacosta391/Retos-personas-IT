@@ -1,0 +1,301 @@
+body{
+    margin: 0;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+/* HEADER */
+
+.container {
+    position: relative;
+    Overflow: hidden;
+    display: flex;
+    justify-content: end;
+    
+}
+
+.navbar{
+    position: absolute;   
+}
+
+ul{
+    display: flex;
+    list-style: none;
+   
+}
+
+
+.nav-item a{ 
+    margin: 0 10px;
+    text-decoration: none;
+    padding: 20px;
+    color: white;
+}
+
+.nav-item a:hover{
+
+    font-weight: bold;
+    font-size: 18px;
+    transition: 1s;
+}
+
+.header-bg{
+    width: 100%;
+    height: 100%;
+    
+}
+
+.glow{
+    position: absolute;
+    width: 100%;
+    height: 140%;
+    left: 0;
+    top: 0;
+}
+
+.container-element {
+    position:absolute;
+    left: 25%;
+    top: 25%;
+}
+
+.title{
+    color: white;
+    text-align: center;
+    font-size: 60px;
+}
+
+.nav-open{
+    display: none;
+    position: absolute;
+    right: 0;
+    margin: 4px;
+    font-size: 40px;
+    border: 0;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+.nav-close{
+    display: none;
+    position: absolute;
+    right: 0;
+    margin: 4px;
+    font-size: 40px;
+    border: 0;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+/* MediaQ */
+
+
+@media (max-width: 900px) {
+    .container {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        height: 50vh;
+        
+    }
+    
+    .nav-open{
+        
+        display: block;
+        
+    
+}
+    .navbar{
+        opacity: 1;
+        visibility: hidden;
+        background-color: rgb(120, 98, 166);
+        position: absolute;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .nav-view{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav-close{
+        display: block;
+        position: absolute;
+        right: 0;
+        margin: 4px;
+    }
+
+    
+    
+    ul{
+        display: flex;
+        list-style: none;
+        flex-direction: column;
+        text-align: center;
+        line-height: 70px;
+        
+        
+        
+        
+       
+    }
+    
+    
+    .nav-item a{ 
+        text-decoration: none;
+        color: white;
+        text-align: center;
+        
+    }
+
+    
+    
+    .nav-item a:hover{
+    
+        font-weight: bold;
+        font-size: 18px;
+        transition: 1s;
+    }
+    
+    .header-bg{
+        width: 100%;
+        height: 100%;
+        
+    }
+    
+    .glow{
+        position: absolute;
+        width: 100%;
+        height: 140%;
+        left: 0;
+        top: 0;
+    }
+    
+    .container-element {
+        position:absolute;
+        left: 5%;
+        top: 10%;
+    }
+    
+    .title{
+        color: white;
+        text-align: center;
+        font-size: 30px;
+    }
+
+    
+
+}
+
+/* MAIN */
+
+.flex-img{
+    max-width: 400px;
+    max-height: 400px;
+}
+.flex-container{
+    display: flex;
+    margin-top: 10%;
+    margin-left: 10%;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+.flex-item{
+    width: 50%;
+    height: 50%;
+    margin: auto;
+    text-align: initial;
+}
+
+.sub-title{
+    color: rgb(120, 98, 166);
+}
+
+.sub-text{
+    font-weight: bold;
+    font-size: 23px;
+}
+
+.text {
+    font-size: 15px;
+    line-height: 30px;
+    
+}
+
+
+/* MediaQ */
+
+
+@media (max-width: 900px) {
+    
+    .flex-container {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    flex-direction: column;
+    flex-wrap: wrap;
+    }
+
+    .flex-img{
+        max-width: 200px;
+        max-height: 200px;
+    }
+
+    .flex-item{
+        margin-top: 10%;
+        text-align: center;
+        justify-content: center;
+        }
+            
+     .sub-title{
+         color: rgb(120, 98, 166);
+     }
+     
+     .sub-text{
+         font-weight: bold;
+         font-size: 23px;
+     }
+     
+     .text {
+         font-size: 15px;
+         line-height: 20px;
+          
+     }
+}
+
+/* SUB SECTION */
+
+.sub-box{
+    padding-top: 3%;
+    padding-bottom: 3%;
+    margin: 20% 10%;
+    background-color: rgb(241, 198, 145);
+    text-align: center;
+    border-radius: 10px;
+}
+
+.btn{
+    background-color:  rgb(241, 198, 145);
+    border-radius: 10px;
+    padding: 9px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* FOOTER */
+
+.footer{
+    background-color:rgb(120, 98, 166);
+    padding: 3px; 
+}
+
+.footer, text {
+    padding-left: 15%;
+    font-size: 13px;
+    color: white;
+}
